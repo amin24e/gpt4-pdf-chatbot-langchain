@@ -48,10 +48,10 @@ PINECONE_ENVIRONMENT=
 PINECONE_INDEX_NAME=
 
 ```
-
+- To get PINECONE_INDEX_NAME  > Go to Pinecone--> INDEXES --> Create index  , the index dimensions should be Dimensions (because thats what the OpenAI Embeddings Endpoint uses)
 - Visit [openai](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to retrieve API keys and insert into your `.env` file.
 - Visit [pinecone](https://pinecone.io/) to create and retrieve your API keys, and also retrieve your environment and index name from the dashboard.
-- Go to Pinecone--> INDEXES --> Create index
+
 
 4. In the `config` folder, replace the `PINECONE_NAME_SPACE` with a `namespace` where you'd like to store your embeddings on Pinecone when you run `npm run ingest`. This namespace will later be used for queries and retrieval.
 
